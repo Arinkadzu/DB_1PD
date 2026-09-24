@@ -9,7 +9,8 @@ BEGIN -- bloks, kas atkārtotas palaišanas gadījumā notīra veco stāvokli
    WHERE table_name IN ('STOPS', 'ROUTES', 'ROADS', 'CATCHMENTS', 'BUILDINGS'); -- tikai piecām ģeometrijas tabulām
   COMMIT; -- saglabā dzēšanu
 END; -- bloka beigas
-/ -- palaiž PL/SQL bloku
+-- palaiž PL/SQL bloku
+/ 
 
 -- 1. slānis, pieturas kā punkti
 CREATE TABLE STOP_TYPES ( -- klasifikators pieturas veidam
